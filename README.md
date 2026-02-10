@@ -13,3 +13,5 @@ Environment variables:
 ## Run locally
 ```bash
 python app/app.py
+
+test ci

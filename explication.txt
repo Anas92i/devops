@@ -1,0 +1,5 @@
+Le code python : retourne des logs, zerma il y'a des script qui tourne en backend et sa renvoie des logs random
+“C’est une application Python qui simule un service backend en production en générant des logs structurés en continu,
+ configurables par variables d’environnement, et exploitables par Docker et le cloud.
+
+ 

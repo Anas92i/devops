@@ -1,0 +1,18 @@
+FROM python:3.11-slim
+
+# Variables d'environnement propres
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Dossier de travail
+WORKDIR /app
+
+# Copier le code
+COPY app/ /app/
+
+# (Pas de dépendances mais on garde la bonne pratique)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Lancer l'application
+CMD ["python", "app.py"]
